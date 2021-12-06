@@ -174,7 +174,7 @@ def Leverage(fitted_model, student_residuals = None,\
   ax.set_xlabel('Leverage')
   ax.set_title('Residuals vs. Leverage')
   ax.set_ylim(min(y)-min(y)*0.15,max(y)+max(y)*0.15)
-  ax.set_xlim(-0.01,max(x)+max(x)*0.05)
+  ax.set_xlim(-0.001,max(x)+max(x)*0.05)
 
   cooksx = np.linspace(min(x), xpos, 50)
   p = len(fitted_model.params)
